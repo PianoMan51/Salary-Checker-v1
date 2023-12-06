@@ -1,0 +1,821 @@
+:root {
+    --blue: #3498db;
+    --darkerBlue: #2980b9;
+    --background: #34495E;
+    --lightgray: #dfe6e9;
+    --gray: #b2bec3;
+    --darkgray: #636e72;
+    --red: #e74c3c;
+    --yellow: #f1c40f;
+    --darkyellow: #f39c12;
+    --green: #2ecc71;
+    --darkgreen: #27ae60;
+    --purple: #9b59b6;
+    --darkpurple: #8e44ad;
+}
+
+* {
+    font-weight: bold;
+    font-family: Varela Round;
+}
+
+body {
+    background-color: var(--background);
+    overflow: hidden;
+}
+
+#app {
+    background-color: var(--lightgray);
+    width: 80%;
+    min-width: 1000px;
+    height: 90%;
+    min-height: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+}
+
+#header {
+    height: 40px;
+    background-color: white;
+    margin: 10px;
+    margin-bottom: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+#header span {
+    position: absolute;
+    line-height: 40px;
+    padding-left: 20px;
+    color: var(--background);
+    letter-spacing: .6em;
+}
+
+.selectedPage {
+    transform: scale(1.2);
+}
+
+.headerButtons {
+    text-align: center;
+    width: 10%;
+    height: 40px;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.headerButtons button {
+    border: none;
+    background-color: transparent;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    letter-spacing: .2em;
+    color: var(--background);
+}
+
+#wrapper {
+    background-color: white;
+    margin: 10px;
+    margin-top: 2px;
+    height: 80%;
+    min-height: 550px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#dots {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto 40px auto;
+    border-radius: 10px;
+}
+
+#dots :not(.dotMonth) {
+    opacity: .2;
+    background-color: var(--background);
+    border: 2px solid var(--background);
+}
+
+#dots label {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--background);
+    border: 2px solid var(--background);
+}
+
+#wrap1 {
+    border-right: 2px solid var(--lightgray);
+    width: 15%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.h1 {
+    width: 100%;
+    height: 30px;
+    background-color: var(--lightgray);
+}
+
+#wrap2 {
+    width: 70%;
+    padding: 10px;
+}
+
+#wrap3 {
+    border-left: 2px solid var(--lightgray);
+    width: 15%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#wrap3 button {
+    cursor: pointer;
+}
+
+#inf {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 200px;
+}
+
+#shift {
+    display: none;
+    padding: 10px;
+    background-color: var(--darkerBlue);
+    border-radius: 15px;
+}
+
+#shift button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-right: 7px;
+    margin-bottom: 5px;
+}
+
+#deleteShift {
+    background-color: var(--red);
+}
+
+#editShift {
+    background-color: var(--yellow);
+}
+
+#shift table {
+    width: 100%;
+}
+
+#shift td {
+    padding: 5px 5px;
+}
+
+#shift #table1,
+#shift #table2 {
+    background-color: var(--blue);
+}
+
+#shift #table1 {
+    border-radius: 10px 10px 0px 0px;
+}
+
+#table1 td,
+#table2 td {
+    height: 20px;
+}
+
+#table3 td {
+    text-align: left;
+    height: 20px;
+}
+
+#shift #table3 {
+    background-color: transparent;
+    border: 5px solid var(--blue)
+}
+
+#shift #table4 {
+    background-color: var(--blue);
+    height: 30px;
+    font-size: larger;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#shift td {
+    color: white;
+    font-weight: bolder;
+}
+
+#shiftTable1,
+#shiftTable2 {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#actionButtons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 0px;
+}
+
+#actionButtons button {
+    width: 50%;
+    outline: none;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 2px;
+    font-style: italic;
+    border-radius: 0px;
+    transition: 0.3s;
+}
+
+#actionButtons button:hover {
+    letter-spacing: 4px;
+    transition: 0.3s;
+}
+
+#rateInputBody {
+    overflow-y: scroll;
+    border-bottom: 2px solid var(--lightgray);
+}
+
+#rateInputBodyTop {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.rateInput {
+    padding: 5px 10px;
+    font-size: small;
+}
+
+.rateInput input {
+    width: 30%;
+    height: 25px;
+    background-color: var(--lightgray);
+    border: none;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    float: right;
+}
+
+#rateInputButtons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5px;
+}
+
+#rateInputButtons button {
+    padding: 5px;
+}
+
+#rateSave button {
+    border: none;
+    padding: 5px 10px;
+    background-color: var(--darkgray);
+    color: white;
+}
+
+#divBelow {
+    padding: 10px;
+    overflow-y: scroll;
+    height: 50%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#rateInputBody::-webkit-scrollbar,
+#divBelow::-webkit-scrollbar {
+    display: none;
+}
+
+.input {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-bottom: 2px solid var(--lightgray);
+}
+
+#timeSelects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+#timeSelects select {
+    width: 50%;
+    text-align: center;
+    border: none;
+    height: 60px;
+    font-weight: bolder;
+    font-size: larger;
+    cursor: pointer;
+    background-color: var(--darkgray);
+    color: white;
+}
+
+#timeSelects select option {
+    background-color: var(--lightgray);
+    border-radius: 0px;
+    border: none;
+    font-size: large;
+    color: var(--darkgray)
+}
+
+#timeSelects select::-webkit-scrollbar {
+    display: none;
+}
+
+.preset {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: var(--green);
+    color: white;
+    transition: 0.35s
+}
+
+.presets {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.preset:hover {
+    background-color: var(--darkgreen);
+    color: white;
+}
+
+.presets:hover> :not(:hover) {
+    opacity: 0.4;
+    color: white;
+}
+
+.notselected {
+    opacity: 0.3;
+}
+
+.selected {
+    opacity: 1;
+}
+
+#date,
+#weekday,
+#month,
+#start,
+#end,
+#time,
+#lunch,
+#pay {
+    border: 1px solid black;
+    padding: 4px 10px;
+}
+
+#calendarBody {
+    background-color: var(--darkgray);
+    margin: 0 auto;
+    width: 95%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px 10px;
+    padding-top: 0;
+    border-radius: 20px;
+}
+
+#calendarContainer {
+    background-color: var(--lightgray);
+    padding: 20px 10px;
+    padding-bottom: 1vh;
+    border-radius: 10px;
+}
+
+#calendar {
+    color: var(--darkgray);
+    font-weight: bolder;
+}
+
+#calendar table {
+    border-collapse: collapse;
+    background-color: var(--lightgray);
+}
+
+#calendar .on:hover {
+    background-color: var(--lightgray);
+}
+
+#check {
+    background-color: var(--lightgray);
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+#check table {
+    border-collapse: collapse;
+}
+
+#checkBody {
+    display: none;
+    margin: 0 auto;
+    width: 95%;
+    min-height: 420px;
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px 10px;
+    padding-top: 0;
+    border-radius: 20px;
+    background-color: var(--darkgray);
+}
+
+#chartsBody {
+    display: none;
+}
+
+td,
+th {
+    text-align: center;
+    vertical-align: middle;
+    height: 60px;
+    padding: 0px;
+}
+
+.weekno {
+    border-right: 3px solid var(--gray);
+    width: 12.5%;
+    cursor: default;
+}
+
+.weekdays th {
+    width: 12.5%;
+}
+
+.weekno input {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    color: var(--darkgray);
+    width: 100%;
+    cursor: pointer;
+}
+
+.calendarButtons {
+    background-color: #27ae60;
+}
+
+.weekdays th {
+    border-bottom: 3px solid var(--gray);
+}
+
+.on {
+    background-color: var(--green);
+    color: white;
+}
+
+.on:hover {
+    background-color: var(--green);
+}
+
+.off {
+    background-color: var(--lightgray);
+    color: white;
+}
+
+.off:hover {
+    background-color: var(--gray);
+}
+
+#check th,
+#check td {
+    height: 40px;
+    margin: auto 0;
+    text-align: left;
+}
+
+#check th,
+#check td:not(#perk9) {
+    padding: 10px 10px;
+}
+
+#perk9 input {
+    padding-left: 10px;
+}
+
+#amount9 {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 16;
+}
+
+#paycheck {
+    font-weight: bolder;
+}
+
+.amount {
+    width: 10%;
+}
+
+.rate {
+    width: 20%;
+}
+
+.unit {
+    width: 20%;
+}
+
+.ground {
+    width: 20%;
+}
+
+.specification {
+    width: 20%;
+    border-right: 3px solid var(--gray)
+}
+
+#monthButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    margin: 5px;
+}
+
+#currentMonth {
+    cursor: default;
+    font-size: 30px;
+    font-weight: bolder;
+    color: var(--background);
+    width: 200px;
+}
+
+#prevBtn,
+#nextBtn {
+    cursor: pointer;
+    color: var(--background);
+    background-color: transparent;
+    border: none;
+    font-size: larger;
+    font-weight: bolder;
+    padding: .1rem;
+}
+
+#prevBtn {
+    transform: rotate(-90deg);
+}
+
+#nextBtn {
+    transform: rotate(90deg);
+}
+
+#checkTotal {
+    background-color: #27ae60;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 10;
+    top: 10;
+}
+
+.banner .macbuttons {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.banner .macbuttons button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.banner .macbuttons button:hover {
+    transform: scale(1.05);
+    border: 2px solid white;
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+@media screen and (max-width: 2000px) {
+    #app {
+        height: 95%
+    }
+
+    #wrapper {
+        height: 85%
+    }
+
+    .preset {
+        padding: 10px 29px;
+    }
+
+    .banner .macbuttons button {
+        width: 15px;
+        height: 15px;
+    }
+
+    .banner .macbuttons {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 60px;
+    }
+
+    #check th,
+    #check td,
+    #check tr,
+    #check td {
+        height: 10px;
+        font-size: smaller;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    #app {
+        height: 95%
+    }
+
+    #wrapper {
+        height: 80%
+    }
+
+    .banner .macbuttons button {
+        width: 15px;
+        height: 15px;
+    }
+
+    .banner .macbuttons {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 60px;
+    }
+
+    #calendar td,
+    #calendar th {
+        text-align: center;
+        vertical-align: middle;
+        height: 45px;
+    }
+
+    #calendar td.on {
+        font-size: small;
+    }
+
+    #calendarBody {
+        padding-bottom: 20px;
+    }
+
+    #checkBody {
+        height: 75%;
+    }
+
+    .banner .macbuttons {
+        padding-left: 20px;
+    }
+
+    #timeSelects select {
+        font-size: smaller;
+        padding: 10px 15px;
+        width: auto;
+        height: auto;
+    }
+
+    #timeSelects select option {
+        font-size: smaller
+    }
+
+    #timeSelects {
+        gap: 10px;
+    }
+
+    #dots {
+        width: 40%;
+    }
+
+    .preset {
+        width: 100%;
+        text-align: center;
+    }
+
+    #dots {
+        margin: 10px auto 10px auto;
+    }
+
+    #currentMonth {
+        font-size: 24px;
+    }
+
+    #monthButtons {
+        align-items: center;
+    }
+
+    .specification {
+        width: 20%;
+    }
+
+    #table3 td {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    #table4 td {
+        height: 20px;
+    }
+
+    .rateInput {
+        font-size: 12px;
+        margin-top: 1px;
+        background-color: var(--lightgray);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .rateInput input {
+        font-size: 12px;
+        height: 24px;
+        width: 40%;
+        background-color: white;
+        float: none;
+    }
+
+    #check th,
+    #check td:not(#perk9) {
+        padding: 7px 7px;
+    }
+
+    #dots label {
+        width: 7px;
+        height: 7px;
+    }
+
+    .input {
+        overflow: scroll;
+    }
+
+    #amount9 {
+        font-size: 11px;
+    }
+
+    #actionButtons button {
+        font-size: 10px;
+        letter-spacing: 0px;
+    }
+
+    #actionButtons button:hover {
+        letter-spacing: 0px;
+    }
+}

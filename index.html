@@ -1,0 +1,510 @@
+<html>
+
+<head>
+    <title>
+        work
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+</head>
+
+<body>
+    <button id="clearAll" style="position: absolute;">Clear all</button>
+    <div id="app">
+        <div class="banner">
+            <div class="macbuttons">
+                <button class="red"></button>
+                <button class="yellow"></button>
+                <button class="green"></button>
+            </div>
+        </div>
+
+
+        <div id="header">
+            <span>Føtex Salary</span>
+
+            <div class="headerButtons">
+                <button id="navBtnPaycheck">Paycheck</button>
+                <button id="navBtnCalendar" class="selectedPage">Calendar</button>
+                <button id="navBtnCharts">Charts</button>
+            </div>
+        </div>
+
+
+        <div id="wrapper">
+
+            <div id="wrap1">
+                <div class="input">
+                    <div id="timeSelects">
+                        <select id="shiftStartSelect" style="-webkit-appearance: none;">
+                            <option value="06:45">6:45</option>
+
+                            <option value="07:00">7:00</option>
+                            <option value="07:15">7:15</option>
+                            <option value="07:30">7:30</option>
+                            <option value="07:45">7:45</option>
+
+                            <option value="08:00">8:00</option>
+                            <option value="08:15">8:15</option>
+                            <option value="08:30">8:30</option>
+                            <option value="08:45">8:45</option>
+
+                            <option value="09:00">9:00</option>
+                            <option value="09:15">9:15</option>
+                            <option value="09:30">9:30</option>
+                            <option value="09:45">9:45</option>
+
+                            <option value="10:00">10:00</option>
+                            <option value="10:15">10:15</option>
+                            <option value="10:30">10:30</option>
+                            <option value="10:45">10:45</option>
+
+                            <option value="11:00">11:00</option>
+                            <option value="11:15">11:15</option>
+                            <option value="11:30">11:30</option>
+                            <option value="11:45">11:45</option>
+
+                            <option value="12:00">12:00</option>
+                            <option value="12:15">12:15</option>
+                            <option value="12:30">12:30</option>
+                            <option value="12:45">12:45</option>
+
+                            <option value="13:00">13:00</option>
+                            <option value="13:15">13:15</option>
+                            <option value="13:30">13:30</option>
+                            <option value="13:45">13:45</option>
+
+                            <option value="14:00">14:00</option>
+                            <option value="14:15">14:15</option>
+                            <option value="14:30">14:30</option>
+                            <option value="14:45">14:45</option>
+
+                            <option value="15:00">15:00</option>
+                            <option value="15:15">15:15</option>
+                            <option value="15:30">15:30</option>
+                            <option value="15:45">15:45</option>
+
+                            <option value="16:00" selected>16:00</option>
+                            <option value="16:15">16:15</option>
+                            <option value="16:30">16:30</option>
+                            <option value="16:45">16:45</option>
+
+                            <option value="17:00">17:00</option>
+                            <option value="17:15">17:15</option>
+                            <option value="17:30">17:30</option>
+                            <option value="17:45">17:45</option>
+
+                            <option value="18:00">18:00</option>
+                            <option value="18:15">18:15</option>
+                            <option value="18:30">18:30</option>
+                            <option value="18:45">18:45</option>
+
+                            <option value="19:00">19:00</option>
+                            <option value="19:15">19:15</option>
+                            <option value="19:30">19:30</option>
+                            <option value="19:45">19:45</option>
+
+                            <option value="20:00">20:00</option>
+                            <option value="20:15">20:15</option>
+                            <option value="20:30">20:30</option>
+                            <option value="20:45">20:45</option>
+
+                            <option value="21:00">21:00</option>
+                            <option value="21:15">21:15</option>
+                            <option value="21:30">21:30</option>
+                            <option value="21:45">21:45</option>
+                        </select>
+                        <span style="font-size: 50px; color: var(--darkgray)">:</span>
+                        <select id="shiftEndSelect" style="-webkit-appearance: none;">
+                            <option value="06:45">6:45</option>
+
+                            <option value="07:00">7:00</option>
+                            <option value="07:15">7:15</option>
+                            <option value="07:30">7:30</option>
+                            <option value="07:45">7:45</option>
+
+                            <option value="08:00">8:00</option>
+                            <option value="08:15">8:15</option>
+                            <option value="08:30">8:30</option>
+                            <option value="08:45">8:45</option>
+
+                            <option value="09:00">9:00</option>
+                            <option value="09:15">9:15</option>
+                            <option value="09:30">9:30</option>
+                            <option value="09:45">9:45</option>
+
+                            <option value="10:00">10:00</option>
+                            <option value="10:15">10:15</option>
+                            <option value="10:30">10:30</option>
+                            <option value="10:45">10:45</option>
+
+                            <option value="11:00">11:00</option>
+                            <option value="11:15">11:15</option>
+                            <option value="11:30">11:30</option>
+                            <option value="11:45">11:45</option>
+
+                            <option value="12:00">12:00</option>
+                            <option value="12:15">12:15</option>
+                            <option value="12:30">12:30</option>
+                            <option value="12:45">12:45</option>
+
+                            <option value="13:00">13:00</option>
+                            <option value="13:15">13:15</option>
+                            <option value="13:30">13:30</option>
+                            <option value="13:45">13:45</option>
+
+                            <option value="14:00">14:00</option>
+                            <option value="14:15">14:15</option>
+                            <option value="14:30">14:30</option>
+                            <option value="14:45">14:45</option>
+
+                            <option value="15:00">15:00</option>
+                            <option value="15:15">15:15</option>
+                            <option value="15:30">15:30</option>
+                            <option value="15:45">15:45</option>
+
+                            <option value="16:00">16:00</option>
+                            <option value="16:15">16:15</option>
+                            <option value="16:30">16:30</option>
+                            <option value="16:45">16:45</option>
+
+                            <option value="17:00">17:00</option>
+                            <option value="17:15">17:15</option>
+                            <option value="17:30">17:30</option>
+                            <option value="17:45">17:45</option>
+
+                            <option value="18:00">18:00</option>
+                            <option value="18:15">18:15</option>
+                            <option value="18:30">18:30</option>
+                            <option value="18:45">18:45</option>
+
+                            <option value="19:00">19:00</option>
+                            <option value="19:15">19:15</option>
+                            <option value="19:30">19:30</option>
+                            <option value="19:45">19:45</option>
+
+                            <option value="20:00">20:00</option>
+                            <option value="20:15">20:15</option>
+                            <option value="20:30">20:30</option>
+                            <option value="20:45">20:45</option>
+
+                            <option value="21:00">21:00</option>
+                            <option value="21:15" selected>21:15</option>
+                            <option value="21:30">21:30</option>
+                            <option value="21:45">21:45</option>
+                        </select>
+                    </div>
+                    <div class="presets" id="presetsClass">
+                        <label class="preset">06:45</label>
+                        <label class="preset">14:00</label>
+                        <label class="preset">15:00</label>
+                        <label class="preset">16:00</label>
+                        <label class="preset">20:15</label>
+                        <label class="preset">21:15</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="wrap2">
+
+
+                <div id="monthButtons">
+                    <button id="prevBtn">&#128710</button>
+                    <span id="currentMonth"></span>
+                    <button id="nextBtn">&#128710</button>
+                </div>
+
+                <div id="dots">
+                    <label></label>
+                    <label></label>
+                    <label></label>
+                    <label></label>
+                    <label></label>
+                    <label></label>
+                    <label></label>
+                    <label></label>
+                    <label></label>
+                    <label></label>
+                    <label></label>
+                    <label></label>
+                </div>
+
+                <div id="container">
+
+                    <div id="checkBody">
+                        <div class="banner">
+                            <div class="macbuttons">
+                                <button class="red"></button>
+                                <button class="yellow"></button>
+                                <button class="green"></button>
+                            </div>
+                        </div>
+                        <div id="checkCointainer">
+                            <div id="check">
+                                <table>
+                                    <tr>
+                                        <th class="specification">Specification</th>
+                                        <th class="ground">Ground</th>
+                                        <th class="unit">Unit</th>
+                                        <th class="rate">Rate</th>
+                                        <th class="amount">Amount</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="specification" id="base">Base</th>
+                                        <td class="ground"></td>
+                                        <td class="unit" id="totalTime"></td>
+                                        <td class="rate" id="baseRate"></td>
+                                        <td class="amount" id="baseAmount"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="specification" id="evening">Evening hours
+                                        </th>
+                                        <td class="ground"></td>
+                                        <td class="unit" id="totalEvening"></td>
+                                        <td class="rate" id="eveningRate"></td>
+                                        <td class="amount" id="eveningAmount"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="specification" id="saturday">Saturday hours
+                                        </th>
+                                        <td class="ground"></td>
+                                        <td class="unit" id="totalSaturday"></td>
+                                        <td class="rate" id="saturdayRate"></td>
+                                        <td class="amount" id="saturdayAmount"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="specification" id="sunday">Sunday hours
+                                        </th>
+                                        <td class="ground"></td>
+                                        <td class="unit" id="totalSunday"></td>
+                                        <td class="rate" id="sundayRate"></td>
+                                        <td class="amount" id="sundayAmount"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="specification">Pension</th>
+                                        <td class="ground" id="ground5"></td>
+                                        <td class="unit"></td>
+                                        <td class="rate" id="rate5"></td>
+                                        <td class="amount" id="amount5"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="specification">ATP</th>
+                                        <td class="ground"></td>
+                                        <td class="unit"></td>
+                                        <td class="rate"></td>
+                                        <td class="amount" id="amount6"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="specification">LBC</th>
+                                        <td class="ground" id="ground7"></td>
+                                        <td class="unit"></td>
+                                        <td class="rate" id="rate7"></td>
+                                        <td class="amount" id="amount7"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="specification">A-Tax</th>
+                                        <td class="ground" id="ground8"></td>
+                                        <td class="unit"></td>
+                                        <td class="rate" id="rate8"></td>
+                                        <td class="amount" id="amount8"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="specification">Perks</th>
+                                        <td class="ground"></td>
+                                        <td class="unit"></td>
+                                        <td class="rate"></td>
+                                        <td class="amount" id="perk9"><input id="amount9"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="specification">P.FOR Aarhus</th>
+                                        <td class="ground"></td>
+                                        <td class="unit"></td>
+                                        <td class="rate"></td>
+                                        <td class="amount" id="amount10"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="specification">Additional Perks
+                                        </th>
+                                        <td class="ground" id="ground11"></td>
+                                        <td class="unit"></td>
+                                        <td class="rate" id="rate11"></td>
+                                        <td class="amount" id="amount11"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="specification">Holiday</th>
+                                        <td class="ground"></td>
+                                        <td class="unit"></td>
+                                        <td class="rate"></td>
+                                        <td class="amount" id="amount12"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="specification">PFA</th>
+                                        <td class="ground" id="ground13"></td>
+                                        <td class="unit"></td>
+                                        <td class="rate" id="rate13"></td>
+                                        <td class="amount" id="amount13"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="specification">Paycheck</th>
+                                        <td class="ground"></td>
+                                        <td class="unit"></td>
+                                        <td class="rate"></td>
+                                        <td class="amount" id="paycheck"></td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="calendarBody">
+                        <div class="banner">
+                            <div class="macbuttons">
+                                <button class="red" id="clearMonth"></button>
+                                <button class="yellow"></button>
+                                <button class="green"></button>
+                            </div>
+                        </div>
+
+                        <div id="calendarContainer">
+                            <div id="calendar">
+                                <table>
+                                    <tr class="weekdays">
+                                        <th>Week</th>
+                                        <th>Mon</th>
+                                        <th>Tue</th>
+                                        <th>Wed</th>
+                                        <th>Thu</th>
+                                        <th>Fri</th>
+                                        <th>Sat</th>
+                                        <th>Sun</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="weekno" id="week1"><input id="weekinput"></th>
+                                        <td id="td0" class="off"></td>
+                                        <td id="td1" class="off"></td>
+                                        <td id="td2" class="off"></td>
+                                        <td id="td3" class="off"></td>
+                                        <td id="td4" class="off"></td>
+                                        <td id="td5" class="off"></td>
+                                        <td id="td6" class="off"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="weekno" id="week2"><span id="weekinput2"></span></th>
+                                        <td id="td7" class="off"></td>
+                                        <td id="td8" class="off"></td>
+                                        <td id="td9" class="off"></td>
+                                        <td id="td10" class="off"></td>
+                                        <td id="td11" class="off"></td>
+                                        <td id="td12" class="off"></td>
+                                        <td id="td13" class="off"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="weekno" id="week3"><span id="weekinput3"></span></th>
+                                        <td id="td14" class="off"></td>
+                                        <td id="td15" class="off"></td>
+                                        <td id="td16" class="off"></td>
+                                        <td id="td17" class="off"></td>
+                                        <td id="td18" class="off"></td>
+                                        <td id="td19" class="off"></td>
+                                        <td id="td20" class="off"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="weekno" id="week4"><span id="weekinput4"></span></th>
+                                        <td id="td21" class="off"></td>
+                                        <td id="td22" class="off"></td>
+                                        <td id="td23" class="off"></td>
+                                        <td id="td24" class="off"></td>
+                                        <td id="td25" class="off"></td>
+                                        <td id="td26" class="off"></td>
+                                        <td id="td27" class="off"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="weekno" id="week5"><span id="weekinput5"></span></th>
+                                        <td id="td28" class="off"></td>
+                                        <td id="td29" class="off"></td>
+                                        <td id="td30" class="off"></td>
+                                        <td id="td31" class="off"></td>
+                                        <td id="td32" class="off"></td>
+                                        <td id="td33" class="off"></td>
+                                        <td id="td34" class="off"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="weekno" id="week6"><span id="weekinput6"></span></th>
+                                        <td id="td35" class="off"></td>
+                                        <td id="td36" class="off"></td>
+                                        <td id="td37" class="off"></td>
+                                        <td id="td38" class="off"></td>
+                                        <td id="td39" class="off"></td>
+                                        <td id="td40" class="off"></td>
+                                        <td id="td41" class="off"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="chartsBody">
+                        <h1>ok</h1>
+                    </div>
+
+                    <div id="shifts0"></div>
+                    <div id="shifts1"></div>
+                    <div id="shifts2"></div>
+                    <div id="shifts3"></div>
+                    <div id="shifts4"></div>
+                    <div id="shifts5"></div>
+                    <div id="shifts6"></div>
+                    <div id="shifts7"></div>
+                    <div id="shifts8"></div>
+                    <div id="shifts9"></div>
+                    <div id="shifts10"></div>
+                    <div id="shifts11"></div>
+
+                </div>
+
+            </div>
+
+
+            <div id="wrap3">
+                <div id="rateInputBody">
+                    <div id="rateInputBodyTop">
+                        <span id="rateInputMonth"></span>
+                    </div>
+
+                    <div class="rateInputs">
+                        <div class="rateInput">Base rate: <input id="inputBase"></div>
+                        <div class="rateInput">Evening rate: <input id="inputEvening"></div>
+                        <div class="rateInput">Saturday rate: <input id="inputSaturday"></div>
+                        <div class="rateInput">Sunday rate: <input id="inputSunday"></div>
+                        <div class="rateInput">Pension rate: <input id="inputPension"></div>
+                        <div class="rateInput">LBC rate: <input id="inputLBC"></div>
+                        <div class="rateInput">Tax rate: <input id="inputTax"></div>
+                        <div class="rateInput">PFA rate: <input id="inputPerk"></div>
+                        <div class="rateInput">Perk rate: <input id="inputPFA"></div>
+                        <div id="rateInputButtons">
+                            <div id="rateSave"><button>Save</button></div>
+                        </div>
+
+                    </div>
+
+                    <div id="clearLocalStorage">
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
